@@ -1,0 +1,117 @@
+/* Changing Defualt css of body tag */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFD1DC;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Heading Section */
+#heading {
+    width: 100%;
+    height: 10%;
+    background-color: #7851A9;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* For Big Container */
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* For Clock Container */
+#clock-container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.time-display {
+    font-size: 6em;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* For Alarm Container */
+#alarm-clock-container {
+    text-align: center;
+    background-color: #AED6F1;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #FCD12A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+select {
+    margin-top: 5px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .time-display {
+        font-size: 4em;
+    }
+
+    #clock-container, #alarm-clock-container {
+        width: 90%;
+    }
+    
+}

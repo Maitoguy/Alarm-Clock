@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding Favicon and title to page -->
+    <title>Alarm Clock</title>
+    <link rel="icon" type="image" href="https://cdn-icons-png.flaticon.com/128/3094/3094972.png">
+    <!-- Linking CSS to HTML -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- For Heading -->
+    <div id="heading">
+        <h1>Alarm Clock</h1>
+    </div>
+    <!-- Main Container contain both Clock and Alarm Clock -->
+    <div id="container">
+        <!-- Clock Container -->
+        <div id="clock-container">
+            <div>
+                <p id="clock-hour" class="time-display">04</p>
+            </div>
+            <div>
+                <p class="time-display">:</p>
+            </div>
+            <div>
+                <p id="clock-minute" class="time-display">18</p>
+            </div>
+            <div>
+                <p class="time-display">:</p>
+            </div>
+            <div>
+                <p id="clock-second" class="time-display">54</p>
+            </div>
+            <div>
+                <p id="clock-meridian" class="time-display">PM</p>
+            </div>
+        </div>
+        <!-- Alarm Contaier -->
+        <div id="alarm-clock-container">
+            <label>Please Enter Time</label>
+            <div>
+                <input required type="number" min="0" max="12" id="alarm-hour">
+            </div>
+            <div>
+                <input required type="number" min="0" max="59" id="alarm-minute">
+            </div>
+            <div>
+                <select required id="alarm-meridian">
+                    <option>AM</option>
+                    <option>PM</option>
+                </select>
+            </div>
+            <button type="submit" onclick="takeInput()">Set Alarm</button>
+            <ul id="saved-alarm-list">
+                <!-- <li>
+                    <p id="saved-alarm">04:18:54 PM</p>
+                    <img src="https://cdn-icons-png.flaticon.com/16/1214/1214428.png" class="delete">
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- Linking JS to HTML -->
+    <script src="script.js"></script>
+</body>
+
+</html>
